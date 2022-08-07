@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Raleway', sans-serif;
+
+
+  padding: 0;
+  margin: 0;
+
+  background-color: #7c49a6;
+
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  width: 100vw;
+
+  color: white;
+  background-color: #392061;
+}
+
+h1 {
+  z-index: 0;
+  position: fixed;
+}
+
+main {
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem;
+  margin: 3rem 1rem;
+  border: none;
+  border-radius: 20px;
+
+  background-color: #f7d260;
+}
+
+@media only screen and (max-width: 950px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+.card-wrapper {
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
+
+  background-color: #f7d260;
+}
+
+@media only screen and (max-width: 1200px) {
+  .card-wrapper {
+    flex-direction: column;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 70vh;
+  width: 30vw;
+  margin: 1rem 0.2rem;
+}
+
+.image {
+  height: 350px;
+  width: 230px;
+
+  border: none;
+  border-radius: 20px;
+  background-image: none;
+  background: center;
+  background-repeat: no-repeat;
+
+  background-color: white;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#btn {
+font-size: 1.2rem;
+
+  max-width: 20rem;
+  padding: 1rem 2rem;
+  margin: 2rem;
+
+  border: none;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#btn:hover {
+  cursor: pointer;
+}
+
+#btn:active {
+  transform: scale(0.9);
+}
+
+.image.reverse-image {
+  -webkit-transform: scaleY(-1);
+}
+
+.name.reverse-name:after {
+  content: ' - Reversed';
+}
+
+.name:after {
+  content: '';
+}
+
+.text.reverse-text:before {
+  content: 'the Absence or Negation of: ';
+}
+
+.text {
+  text-align: center;
+  letter-spacing: 1.5px;
+  line-height: 1.8;
+  width: 90%;
+}
