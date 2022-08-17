@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-html, body {
+html, body, header {
   font-family: 'Raleway', sans-serif;
 
   padding: 0;
@@ -26,7 +26,6 @@ header {
 
   color: white;
 
-  background-color: #392061;
   background-image: url('./pics/tarot-deck.jpeg');
   background-size:cover;
   background-position: fixed;
